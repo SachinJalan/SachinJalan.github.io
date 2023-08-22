@@ -1,19 +1,16 @@
-# Google Summer of Code 2021 Report
+# Google Summer of Code 2023 Report
 
-## The Project: Integrating Multitaper Periodogram into Stingray
+## The Project: Differential Programming in Material Point Method
 
-A one-line summary of [the
-project](https://summerofcode.withgoogle.com/projects/#5521109757198336)
-can be stated as follows:
+Brief summary of  [the
+project](https://summerofcode.withgoogle.com/programs/2023/projects/RZJ09HkH)
 
-The project involved investigating, implementing, and integrating a
-superior spectral estimation technique, called the [Multitaper
-Periodogram](https://en.wikipedia.org/wiki/Multitaper), into a software package named
-[Stingray](https://github.com/StingraySoftware/stingray), which
-specializes in spectral-timing analysis of astrophysical X-ray time
-series.
 
-The Stingray project is a sub-organization of
+In this project we are building a new library implementing the Material Point Method. The Material Point Method is a computational technique used in solid mechanics and fluid dynamics to simulate the behaviour of materials undergoing large deformation.  
+
+The primary objectives of the library is to provide the support for backward differentiation which will help in solving inverse problems. The library is based on the [C++ Implementation](https://github.com/cb-geo/mpm) of the method. The C++ Implementation does not have support for inverse problem solving. The library is being developed in JAX to efficiently utilize modern GPUs to accelerate MPM simulations.    
+
+<!-- The Stingray project is a sub-organization of
 [OpenAstronomy](https://openastronomy.org/), which, as given on its
 landing page, is a collaboration between open-source astronomy and
 astrophysics projects to share resources, ideas, and to improve code.
@@ -131,4 +128,4 @@ GitHub: <https://github.com/dhruv9vats>
 
 LinkedIn: <https://www.linkedin.com/in/dhruv9vats/>
 
-Medium: <https://dhruv9vats.medium.com/>
+Medium: <https://dhruv9vats.medium.com/> -->
