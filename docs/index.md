@@ -12,5 +12,7 @@ The primary objectives of the library is to provide the support for backward dif
 
 ## What is Differential Programming?  
 
-Differentiable programming is a paradigm that allows us to seamlessly integrate traditional programming and differentiable calculus, opening up exciting opportunities for optimization, sensitivity analysis, and more. Unlike conventional programming, where code execution follows explicit instructions, differentiable programming enables the calculation of gradients of functions with respect to their inputs. This characteristic is particularly powerful in scenarios where optimization is key, as gradients provide crucial information about how small changes in inputs affect the output.
+Differentiable programming is a paradigm that allows us to seamlessly integrate traditional programming and differentiable calculus, opening up exciting opportunities for optimization, sensitivity analysis, and more. Unlike conventional programming, where code execution follows explicit instructions, differentiable programming enables the calculation of gradients of functions with respect to their inputs. This characteristic is particularly powerful in scenarios where optimization is key, as gradients provide crucial information about how small changes in inputs affect the output.  
+Differential Programming has many applications in scientific computing, it is used to solve inverse problems, probabilistic programming. Differentiable programming creats a computational graph of the program and when the backward pass is called it calculates gradient at each node of the computational graph by chain rule.  
+![Computational Graph](https://blog.paperspace.com/content/images/2019/03/full_graph.png)
 
