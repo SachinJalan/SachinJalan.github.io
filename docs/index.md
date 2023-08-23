@@ -36,3 +36,5 @@ Inverse problems play a pivotal role in scientific computing by unraveling hidde
 Using this library we can find the input material properties by iteratively updating the input material properties and minimizing the loss function which is the norm of the expected output and the actual output. Diff-MPM is a novel tool which can provide gradient information and can be used along with existing ML algorithms to generate optimization in robotics.
 
 Following is an example of inverse problem solving using Diff-MPM:
+
+<script src="https://gist.github.com/SachinJalan/b647f0883c9d8f112d5ca5102080d5f6.js"></script>
