@@ -29,4 +29,10 @@ The MPM can be divided into 4 major steps mapping the particles to the node, fin
 ![Material Point Method](https://www.cb-geo.com/images/cb-geo/research/mpm/mpm-algorithm.png)
 *Image Source: [CB-Geo](https://www.cb-geo.com/research/mpm/)*
 
-The MPM is an iterative method and the above steps are run iteratively for each time step. The MPM is a hybrid method which combines the advantages of both the Lagrangian and Eulerian methods.
+## Inverse Problems and Applications
+
+Inverse problems play a pivotal role in scientific computing by unraveling hidden information from observed data. These problems involve inferring the causes or parameters of a system based on its observable outcomes. In scientific computing, they find applications across diverse fields, such as medical imaging, geophysics, and engineering simulations.  
+
+Using this library we can find the input material properties by iteratively updating the input material properties and minimizing the loss function which is the norm of the expected output and the actual output. Diff-MPM is a novel tool which can provide gradient information and can be used along with existing ML algorithms to generate optimization in robotics.
+
+Following is an example of inverse problem solving using Diff-MPM:
