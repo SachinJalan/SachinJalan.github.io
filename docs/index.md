@@ -65,17 +65,23 @@ Having implemented example the method in Taichi lang I developed better understa
 
 Following are few examples simulated from the diff-MPM library and visualised in Paraview:
 
+### Uniaxial Stress
+
+In this example stress is applied to a body simulated by a set of particles and stress is measured on the particles. Following is the analysis of stress on the body simulated by the diff-MPM library:
+
+![Uniaxial Stress](a2.png)
+
 ### Uniaxial Particle Traction
 
 In this example traction is applied to a body simulated by a set of particles and stress is measured on the particles. Following is the analysis of stress on the body simulated by the diff-MPM library:
 
-![Uniaxial Particle Traction](uniaxial_traction_with_mesh.png)
+![Uniaxial Particle Traction](a3.png)
 
 ### Uniaxial Nodal Forces
 
 In this example nodal forces are applied to node 0 and MPM simulation is run on it. Following is the analysis of stress on the body simulated by the diff-MPM library:
 
-![Uniaxial Nodal Forces](uniaxial_nodal_force_with_mesh.png)
+![Uniaxial Nodal Forces](a1.png)
 
 ## Acknowledgements
 
