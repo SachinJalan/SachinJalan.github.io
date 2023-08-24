@@ -41,7 +41,11 @@ Following is an example of inverse problem solving using Diff-MPM:
 
 ## The Work
 
-In the initial part of the period I developed a deeper understanding of the Material Point Method and tried to code the 1-Dimensional version of the Material Point Method in Taichi Lang. I was successfull in generating a 1-Dimensional example in Taichi Lang. In the later part of the period I worked along with the mentor in developing the diff-MPM library in JAX.
+In the initial part of the period I developed a deeper understanding of the Material Point Method, Automatic Differentiation, JAX, Taichi Lang and tried to code the 1-Dimensional version of the Material Point Method in [Taichi Lang](https://github.com/SachinJalan/diffmpm-taichi). We were successful in running a simple forward solver and inverse solver in Taichi.
+
+[Taichi](https://www.taichi-lang.org/) is a modern programming language designed for high-performance numerical computing. Its unique features, such as support for automatic differentiation, GPU acceleration, and explicit parallelism, make it a good choice for implementing complex simulations like the differentiable MPM.
+
+Having implemented example the method in Taichi lang I developed better understanding in the diff MPM method. In the later part of the program I worked along with the mentors in developing the diff-MPM library in JAX.
 
 ### Repositories
 
@@ -55,7 +59,30 @@ In the initial part of the period I developed a deeper understanding of the Mate
 | [Support for VTK Writer](https://github.com/geoelements/diffmpm/pull/29) | [75f8d35](https://github.com/geoelements/diffmpm/pull/29/commits/75f8d35133bdbad02d9de29c8328b1e442b183ba) | <img width=200/>![badge](https://shields.io/badge/PR-Merged-blueviolet?style=for-the-badge&logo=appveyor)   | Added functionality for VTK Writer which enables visualisation of the simulations on Paraview and other softwares, created visualisations for various benchmarks.                                                                                                                                                                                                                                                                                                                          |
 | [Addition of various utility functions for benchmarks](https://github.com/geoelements/diffmpm/pull/26) | [d2050fb](https://github.com/geoelements/diffmpm/pull/26/commits/d2050fbed8d6432046967234a51c6a162a5a54dc) | ![badge](https://shields.io/badge/PR-Merged-blueviolet?style=for-the-badge&logo=appveyor)  | Implemented Utility functions which help in creating the input files for the diff-MPM library by converting the input files for the [CB-Geo benchmarks](https://github.com/cb-geo/mpm-benchmarks). |
 | [Addition of inverse problem examples.](https://github.com/geoelements/diffmpm/pull/30)                                       | [4916f73](https://github.com/geoelements/diffmpm/pull/30/commits/4916f731bb9e824f5a841eb4da8302b178908f38) | ![badge](https://shields.io/badge/PR-Merged-blueviolet?style=for-the-badge&logo=appveyor)  | Examples for 2-dimension inverse problem solver on diff-MPM library added using various types of algorithms like ADAM and Bayesian Optimization, made the inverse problem solver much faster.               |
+[Generated input files for 2-D Plate with hole example](https://github.com/geoelements/diffmpm/pull/28)                                       | [4d4466a](https://github.com/geoelements/diffmpm/pull/28/commits/4d4466ac334fe85dd1d4421d8ec2a54f3bbf9a0b) | ![badge](https://shields.io/badge/PR-Closed-red?style=for-the-badge&logo=appveyor)  | Generated input files for simulating a stress on a 2-D plate with a hole. The configuration file were generated in TOML and JSON. The configuration file was dervied from the [CB-Geo benchmarks](https://github.com/cb-geo/mpm-benchmarks) repository.            |
+
+## Results
+
+Following are few examples simulated from the diff-MPM library and visualised in Paraview:
+
+### Uniaxial Particle Traction
+
+In this example traction is applied to a body simulated by a set of particles and stress is measured on the particles. Following is the analysis of stress on the body simulated by the diff-MPM library:
+
+![Uniaxial Particle Traction](uniaxial_traction_with_mesh.png)
+
+### Uniaxial Nodal Forces
+
+In this example nodal forces are applied to node 0 and MPM simulation is run on it. Following is the analysis of stress on the body simulated by the diff-MPM library:
+
+![Uniaxial Nodal Forces](uniaxial_nodal_force_with_mesh.png)
 
 ## Acknowledgements
 
 I would like to thank the mentors, [Krishna Kumar](https://github.com/kks32) and [Chahak Mehta](https://github.com/chahak13), for their support and guidance, I have learned so much in the past few months from them which I would not have been able to learn on my own.
+
+## Profiles
+
+GitHub: <https://github.com/SachinJalan>
+
+LinkedIn: <https://www.linkedin.com/in/sachin-jalan-591a40228/>
