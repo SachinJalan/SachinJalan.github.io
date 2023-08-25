@@ -67,17 +67,17 @@ Following are few examples simulated from the diff-MPM library and visualised in
 
 ### Uniaxial Stress
 
-In this example stress is applied to a body simulated by a set of particles and stress is measured on the particles. Following is the analysis of stress on the body simulated by the diff-MPM library:
+In this example stress is applied unidirectionally to a body simulated by the MPM solver and stress is measured on the body. The body is simulated by a set of particles and a single element 2-D mesh. The input files for generating the result can be found [here](https://github.com/geoelements/diffmpm/tree/main/benchmarks/2d/uniaxial_stress). Following is the analysis of stress on the body:
 
 ![Uniaxial Stress](a2.png)
 ### Uniaxial Particle Traction
 
-In this example traction is applied to a body simulated by a set of particles and stress is measured on the particles. Following is the analysis of stress on the body simulated by the diff-MPM library:
+In this example traction is applied to a body simulated by the MPM solver and stress is measured on the body. The body is simulated by a set of particles and 3 element 2-D mesh. The input files for generating the results can be found [here](https://github.com/geoelements/diffmpm/tree/main/benchmarks/2d/uniaxial_particle_traction). Following is the analysis of stress on the body simulated by the diff-MPM library:
 
 ![Uniaxial Particle Traction](a3.png)
 ### Uniaxial Nodal Forces
 
-In this example nodal forces are applied to node 0 and MPM simulation is run on it. Following is the analysis of stress on the body simulated by the diff-MPM library:
+In this example uniaxial nodal force is applied on the body simulated by the MPM solver and stress is measured on the body. The body is simulated by a set of particles and a 3 element 2-D mesh. The input files for generating the results can be found [here](https://github.com/geoelements/diffmpm/tree/main/benchmarks/2d/uniaxial_nodal_forces) Following is the analysis of stress on the body simulated by the diff-MPM library:
 
 ![Uniaxial Nodal Forces](a1.png)
 ## Acknowledgements
